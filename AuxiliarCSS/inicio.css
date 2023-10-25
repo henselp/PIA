@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(250, 235, 215, 0.482);
+    background-image: url(/img/artisanal-food-7885997_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.brillo{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.347);
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(251, 251, 251)
+}
+.item {
+
+    display: inline-block;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: .3rem;
+    background: rgb(247, 180, 56);
+    transition: .5s;
+}
+.link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: .3rem;
+    background: #e0db52;
+    transition: .5s;
+}
+
+.link:hover {
+    color:#dc961c;
+}
+
+.item:hover .link::before {
+    width: 50%;
+    transform: translate(100%);
+}
+
+.item:hover .link::after {
+    width: 50%;
+    transform: translate(-100%);
+}
+/* inicio */
+#pantalla{
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+}
+
+/* menú */
+#pantalla .men{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #492d17b9;
+}
+#pantalla .men .log{
+    width: 10%;
+    height: 100%;
+    flex-wrap: wrap-reverse;
+}
+#pantalla .men .log img{
+    width: 45%;
+    height: 90%;
+    position: relative;
+    left: 25%;
+    top: 2%;
+}
+#pantalla .men .lista{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* logo y eslogan */
+#pantalla .frase{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+#pantalla .frase img{
+    width: 50%;
+    height: auto;
+    opacity: 70%;
+    position: relative;
+    left: 23%;
+    top: 13%;
+}
+#pantalla .frase h3{
+    width: 100%;
+    height: 25%;
+    color: rgb(170, 172, 172);
+    text-align: center;
+    position: relative;
+    top: 15%;
+}
+/* video */
+#pantalla .video{
+    width: 50%;
+    height: 80%;
+    position: relative;
+    left: 50%;
+}
+#pantalla .video h2{
+    text-align: center;
+    color: rgb(210, 210, 214);
+    font-size: xx-large;
+    position: relative;
+    top: 17%;
+}
+#pantalla .video video{
+    width: 70%;
+    height: 60%;
+    opacity: 95%;
+    position: relative;
+    left: 15%;
+    top: 22%;
+}
+/* horario */
+.caja1{
+    background-color: #B59870;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 10%;
+    left: 35%;
+}
+.caja1 .caja2{
+    background-color: #D9D3C9;
+    width: 300px;
+    height: 55px;
+    border-radius: 20px;
+    position: relative;
+    top: 5%;
+    left: 10%;
+}
+
+.caja1 .caja2 .let{
+    font-size: x-large;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+.caja1 .caja3{
+    background-color: #492D17;
+    width: 320px;
+    height: 300px;
+    position: relative;
+    top: 8.3%;
+    left: 9.7%;
+    border-radius: 20px;
+}
+.caja1 .text1{
+    font-size: large;
+    text-align: center;
+    position: relative;
+    top: 3%;
+    color: #fff;
+
+}
+.caja1 .lista{
+    text-align: center;
+    font-size: x-large;
+    position: relative;
+    top: 8%;
+    list-style: none;
+    color: #fff;
+    
+}
+/* menu de horarios */
+#pantalla .menu{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #492d17b9;
+}
+#pantalla .menu .logo{
+    width: 10%;
+    height: 100%;
+    flex-wrap: wrap-reverse;
+}
+#pantalla .menu .logo img{
+    width: 45%;
+    height: 90%;
+    position: relative;
+    left: 25%;
+    top: 2%;
+}
+#pantalla .menu .lista{
+    width: 95%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Ver tu perfil */
+#pantalla .foto{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+#pantalla .foto img{
+    width: 60%;
+    height: 60%;
+    border-radius: 1em;
+}
+#pantalla .datos{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+}
+#pantalla .datos p{
+    font-size: x-large;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 100%;
+    color: white;
+}
+#pantalla .datos b{
+    color: black;
+}
+#pantalla .datos button{
+    width: 20%;
+    height: 7%;
+    border-radius: 0.5em;
+    text-align: center;
+    background-color: #492D17;
+    border-color: #492D17;
+    position: relative;
+    top: 30%;
+    margin-left: 20%;
+    margin-top: 2%;
+    color: white;
+}
+/* auxiliar de cocina */
+#pantalla .fras{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+#pantalla .botones{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+}
+#pantalla .botones button{
+    width: 24%;
+    height: 7%;
+    position: relative;
+    left: 40%;
+    top: 40%;
+    background-color: #5B3500;
+    font-size: 90%;
+    border-radius: 0.9em;
+    color: white;
+    margin-top: 3%;
+   
+}
+#pantalla .botones .titulo{
+    width: 59%;
+    height: 7%;
+    font-size: xx-large;
+    color: white;
+    position: relative;
+    left: 25%; bottom: 5%
+}
+#pantalla .fras h1{
+    width: 70%;
+    height: 20%;
+    font-size:xx-large;
+    color: white;
+} 
+/* ayuda */
+#pantalla .ayuda{
+    width: 85%;
+    height: 18%;
+    background-color: #B8977E;
+    position: relative;
+    top: 5%; left: 3%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger; 
+}
+#pantalla .ayuda h3{
+    margin-left: 2%;
+}
+#pantalla .ayuda p{
+    margin-left: 2%;
+}
+#pantalla .contacto{
+    width:85%;
+    height: 18%;
+    background-color: #B8977E;
+    position: relative;
+    top: 10%; left: 3%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;   
+}
+#pantalla .contacto h4{
+    margin-left: 2%;
+}
+#pantalla .sugerencias{
+    width: 50%;
+    height: 30%;
+    background-color: #B8977E;
+    position: relative;
+    top: 15%; left: 3%;
+    border-radius: 10px;       
+    font-size: larger;  
+}
+#pantalla .sugerencias h4{
+    margin-left: 5%;
+    position: relative;
+    top: 10%;
+    font-size: larger;
+}
+#pantalla .sugerencias .blanco input{
+    width: 69%;
+    height: 130px;
+    background-color: white;
+    left: 26%;
+    position: relative;
+    border-radius: 0.5em;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+textarea {
+    width: 65%;
+    height: 130px;
+    background-color: white;
+    position: relative;
+    left: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* nosotros */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    gap: 20px;
+}
+.card  {
+    width:  280px;
+    height:  430px;
+    background:  white;
+    border-radius:  32px;
+    position:  relative;
+    bottom: 6%;
+    box-shadow:  #604b4a30  0px  70px  30px  -50px;
+    transition:  all  0.5s  ease-in-out;
+}
+.card  .mail  {
+    position:  absolute;
+    right:  2rem;
+    top:  1.4rem;
+    background:  transparent;
+    border:  none;
+}
+.card  .mail  svg  {
+    stroke:  #b59870;
+    stroke-width:  3px;
+}
+.card  .mail  svg:hover  {
+    stroke:  #704625;
+}
+.card  .profile-pic  {
+    position:  absolute;
+    width:  calc(100%  -  6px);
+    height:  calc(100%  -  6px);
+    top:  3px;
+    left:  3px;
+    border-radius:  29px;
+    z-index:  1;
+    border:  0px  solid  #704625;
+    overflow:  hidden;
+    transition:  all  0.5s  ease-in-out  0.2s,  z-index  0.5s  ease-in-out  0.2s;
+}
+.card  .profile-pic  img  {
+    width:  100%;
+    height:  100%;
+    -o-object-fit:  cover;
+    -o-object-position:  0px  0px;
+    object-position:  0px  0px;
+    transition:  all  0.5s  ease-in-out  0s;
+}
+.card  .profile-pic  svg  {
+    width:  100%;
+    height:  100%;
+    -o-object-fit:  cover;
+    object-fit:  cover;
+    -o-object-position:  0px  0px;
+    object-position:  0px  0px;
+    transform-origin:  45%  20%;
+    transition:  all  0.5s  ease-in-out  0s;
+}
+.card  .bottom  {
+    position:  absolute;
+    bottom:  3px;
+    left:  3px;
+    right:  3px;
+    background:  #b8977e;
+    top:  80%;
+    border-radius:  29px;
+    z-index:  2;
+    box-shadow:  rgba(96,  75,  74,  0.1882352941)  0px  5px  5px  0px  inset;
+    overflow:  hidden;
+    transition:  all  0.5s  cubic-bezier(0.645,  0.045,  0.355,  1)  0s;
+}
+.card  .bottom  .content  {
+    position:  absolute;
+    bottom:  0;
+    left:  1.5rem;
+    right:  1.5rem;
+    height:  160px;
+}
+.card  .bottom  .content  .name  {
+    display:  block;
+    font-size:  1.2rem;
+    color:  white;
+    font-weight:  bold;
+}
+.card  .bottom  .content  .about-me  {
+    display:  block;
+    font-size:  0.9rem;
+    color:  white;
+    margin-top:  1rem;
+}
+.card  .bottom  .bottom-bottom  {
+    position:  absolute;
+    bottom:  1rem;
+    left:  1.5rem;
+    right:  1.5rem;
+    display:  flex;
+    align-items:  center;
+    justify-content:  space-between;
+}
+.card  .bottom  .bottom-bottom  .social-links-container  {
+    display:  flex;
+    gap:  1rem;
+}
+.card  .bottom  .bottom-bottom  .button  {
+    background:  white;
+    color:  #704625;
+    border:  none;
+    border-radius:  20px;
+    font-size:  0.6rem;
+    padding:  0.4rem  0.6rem;
+    box-shadow:  rgba(165,  132,  130,  0.1333333333)  0px  5px  5px  0px;
+}
+.card  .bottom  .bottom-bottom  .button:hover  {
+    background:  #704625;
+    color:  white;
+}
+.card:hover  {
+    border-top-left-radius:  55px;
+}
+.card:hover  .bottom  {
+    top:  20%;
+    border-radius:  80px  29px  29px  29px;
+    transition:  all  0.5s  cubic-bezier(0.645,  0.045,  0.355,  1)  0.2s;
+}
+.card:hover  .profile-pic  {
+    width:  100px;
+    height:  100px;
+    aspect-ratio:  1;
+    top:  10px;
+    left:  10px;
+    z-index:  3;
+    border:  7px  solid  #704625;
+    box-shadow:  rgba(96,  75,  74,  0.1882352941)  0px  5px  5px  0px;
+    transition:  all  0.5s  ease-in-out,  z-index  0.5s  ease-in-out  0.1s;
+}
+.card:hover  .profile-pic:hover  {
+    transform:  scale(1.2);
+    border-radius:  0px;
+}
+.card:hover  .profile-pic  svg  {
+
+    transition:  all  0.5s  ease-in-out  0.5s;
+}
+
+/* pie de pagina */
+#pie-de-pagina{
+    width: 100%;
+    height: 16vh;
+    background-color:#a76c3fcf;
+    display: flex;
+    flex-direction: row;
+}
+#pie-de-pagina .logos{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#pie-de-pagina .logos img{
+    width: 100%;
+    height: 60%;
+    position: relative;
+    top: 15%; left: 10%;
+}
+#pie-de-pagina .logos .pae{
+    width: 100%;
+    height: 60%;
+    position: relative;
+    top: 15%; left: 10%;
+}
+#pie-de-pagina .derechos{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    text-align: center;
+}
+#pie-de-pagina .derecho{
+    font-size: large;
+}
+#pie-de-pagina .informacion{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#pie-de-pagina .informacion i{
+    margin-right: 5%;
+}
+#pie-de-pagina .informacion .correo{
+    color: black;
+}
+#pie-de-pagina .informacion div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 10%;
+}
