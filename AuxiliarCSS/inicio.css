@@ -495,6 +495,9 @@ textarea {
     font-size:  0.9rem;
     color:  white;
     margin-top:  1rem;
+    text-align: center;
+    position: relative;
+    bottom: 48%;
 }
 .card  .bottom  .bottom-bottom  {
     position:  absolute;
