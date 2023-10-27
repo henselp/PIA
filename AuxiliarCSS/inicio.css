@@ -286,49 +286,79 @@ a{
     color: white;
 }
 /* auxiliar de cocina */
-#pantalla .fras{
-    width: 50%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+/* parte de la tabla */
+#pantalla .tabla {
+    width: 80%;
+    height: 40vh;
+    margin-left: 10%;
+    background-color:#492d17a9;
+    overflow: auto;
+    margin-top: 2%;
 }
-#pantalla .botones{
-    width: 50%;
-    height: 90%;
+#pantalla .tabla table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5.5%;
+    margin-top: 3%;
+}
+#pantalla .tabla table, th, td {
+    border: 1px solid rgb(255, 255, 255);
+}
+#pantalla .tabla th, #pantalla .tabla td {
+    padding: 8px;
+    text-align: left;
+}
+#pantalla .tabla th {
+    background-color:#b59870a4;
+    color: rgb(0, 0, 0);
+    height: 40px;
+}
+#pantalla .tabla td {
+    height: 35px; 
+}
+/* parte del los filtros para agregar */
+#pantalla .agregar {
+    width: 80%;
+    height: 15vh;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color:#492d17a9;
+    margin-top: 2%;
+}
+#pantalla .filtros {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3%;
+}
+#pantalla .espacio{
+    width: 16%;
+    height: 100%;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 50%;
-}
-#pantalla .botones button{
-    width: 24%;
-    height: 7%;
-    position: relative;
-    left: 40%;
-    top: 40%;
-    background-color: #5B3500;
-    font-size: 90%;
-    border-radius: 0.9em;
-    color: white;
-    margin-top: 3%;
-   
-}
-#pantalla .botones .titulo{
-    width: 59%;
-    height: 7%;
-    font-size: xx-large;
-    color: white;
-    position: relative;
-    left: 25%; bottom: 5%
-}
-#pantalla .fras h1{
-    width: 70%;
-    height: 20%;
-    font-size:xx-large;
-    color: white;
+    justify-content: center;
+    margin-left: 2%;
 } 
+/* modificamos el nombre de los filtros */
+#pantalla .espacio label {
+    color: rgb(164, 163, 163);
+}
+/* Modificación del boton de buscar */
+#pantalla .filtros button {
+    width: 8%;
+    height: 25%;
+    color: white;
+    background-color: #704625;
+    border-radius: 0.7em;
+    border-color: #704625;
+    margin-left: 1%;
+    position: relative;
+    top: 1%;
+}
 /* ayuda */
 #pantalla .ayuda{
     width: 85%;

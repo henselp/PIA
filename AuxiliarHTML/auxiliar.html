@@ -25,18 +25,59 @@
                     <li class="item"><a class="link" href="/AuxiliarHTML/ayuda.html">Ayuda</a></li>
                 </ul>
             </nav>
-            <div id="contenidoComunidad"></div>
-            <div id="contenidoEstudiante" style="display: none"></div>
-            <div id="contenidoAuxiliar" style="display: none"></div>
-            <section class="fras">
-                <h1>¡Hola!, te ayudaremos a organizarte mejor</h1>
-            </section>
-            <section class="botones">
-                <button><a href="">Planilla</a></button>
-                <button><a href="">Editar Menú</a></button>
-                <button><a href="">Editar Horarios</a></button>
-                <h2 class="titulo">¿Qué deseas hacer hoy?</h2>
-            </section>
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>HORA</th>
+                            <th>CANTIDAD DE REFRIGERIOS</th>
+                            <th>ESTUDIANTE</th>
+                            <th>NO RECUERDO</th>
+                            <th>GRADO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td ></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="agregar">
+                <form class="filtros" action="">
+                    <!-- Ha cada campo le ponemos un div para poder separarlos y ponerlos vertigalmente uno debajo del otro -->
+                    <div class="espacio">
+                        <label for="Hora">Hora</label>
+                        <input type="text">
+                    </div>
+                    <div class="espacio">
+                        <label for="Cantidad de refrigerios">Cantidad de refrigerios</label>
+                        <input type="number">
+                    </div>
+                    <div class="espacio">
+                        <label for="estudiante">Estudiante</label>
+                        <input type="text">
+                    </div>
+                    <div class="espacio">
+                        <label for="R-S">R-S</label>
+                        <input type="number">
+                    </div>
+                    <div class="espacio">
+                        <label for="Grado">Grado</label>
+                        <input type="number">
+                    </div>
+                    <!-- Creamos un botón -->
+                    <button type="submit">Agregar</button>
+                </form>
+            </div>
+            <div class="editar">
+
+            </div>
         </section>
     </article>
     <footer id="pie-de-pagina">
