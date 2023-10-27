@@ -10,7 +10,8 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
     $Email=$_POST['email'];
     $Grado=$_POST['grado'];
     $Pass=$_POST['pass'];
-    $Consulta->Register($Nombre,$Apellido,$Email,$Grado,$Pass);
+    $comunidad = 'estudiante';
+    $Consulta->Register($Nombre,$Apellido,$Email,$Grado,$Pass,$comunidad);
     header('location: ./index.php');
     exit;
 }

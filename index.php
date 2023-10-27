@@ -18,18 +18,18 @@ $Consulta = new Consultas($Conexion->conexion);
     <div class="container">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="" class="sign-in-form">
+                <form action="./inicio.php" class="sign-in-form" method="post">
                     <h2 class="title">Iniciar Sesión</h2>
                         <div class="input-field">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Username">
+                            <input type="text" placeholder="Correo" name="correo">
                         </div>
 
                         <div class="input-field">
                             <i class="fa-solid fa-school"></i>
-                            <select name="select" class="select" id="select">
+                            <select name="comunidad" class="select" id="select">
                                 <option value="#">Comunity</option>
-                                <option value="Estudiante">Estudiante</option>
+                                <option value="estudiante">Estudiante</option>
                                 <option value="Auxiliar de Cocina">Auxiliar de Cocina</option>
                                 <option value="Administradores">Administradores</option>
                             </select>
@@ -37,7 +37,7 @@ $Consulta = new Consultas($Conexion->conexion);
 
                         <div class="input-field">
                             <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Password" name="pass">
                         </div>
                         <input type="submit" value="Login" class="btn solid">
 
